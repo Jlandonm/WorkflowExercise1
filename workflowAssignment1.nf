@@ -19,7 +19,7 @@ process TRIM {
 
     script:
     """
-    trimmomatic PE -phred33 ${reads[0]} ${reads[1]} ${sample_id}_r1_paired.fq.gz ${sample_id}_r1_unpaired.fq.gz ${sample_id}_r2_paired.fq.gz ${sample_id}_r2_unpaired.fq.gz SLIDINGWINDOW:5:30 AVGQUAL:30 CROP:145 1> trimmo.stdout.log 2> trimmo.stderr.log
+    trimmomatic PE -phred33 ${reads[0]} ${reads[1]} ${sample_id}_r1_paired.fq.gz ${sample_id}_r1_unpaired.fq.gz ${sample_id}_r2_paired.fq.gz ${sample_id}_r2_unpaired.fq.gz SLIDINGWINDOW:5:30 AVGQUAL:30 1> trimmo.stdout.log 2> trimmo.stderr.log
     """
 }
 
