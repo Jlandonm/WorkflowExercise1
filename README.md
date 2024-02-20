@@ -10,3 +10,7 @@ Performed using trimmomatic
 ### Assembly:
 
 Performed using SPAdes
+
+### Special Notes:
+
+The workflow finds the fastq reads from the Data directory, however, functionality has only been tested with one set of paired reads in the directory. Adding multiple pairs of fastq files may cause issues with my current implementation.
