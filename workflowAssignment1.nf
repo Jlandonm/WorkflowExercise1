@@ -1,5 +1,5 @@
 
-params.reads = "$projectDir/Data/subset_ERR8051742_{1,2}.fastq.gz"
+params.reads = "$projectDir/Data/*_{1,2}.fastq.gz"
 
 /*
 Trimming Process
